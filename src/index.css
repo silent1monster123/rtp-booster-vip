@@ -92,5 +92,18 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  /* Fallback untuk debugging */
+  #root {
+    min-height: 100vh;
+    background: hsl(214 100% 97%);
+    color: hsl(217 91% 25%);
+  }
+
+  .dark #root {
+    background: hsl(217 91% 8%);
+    color: hsl(210 40% 98%);
   }
 }
